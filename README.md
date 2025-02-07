@@ -1,2 +1,2 @@
 # oops
-Object Oriented Programming repo
+Object Oriented Programming repository
