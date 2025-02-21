@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+/*
+    cant handle Idle cpu case.
+*/
 typedef struct {
     int pid,arrival,burst,completion,completionFlag,arrivalFlag;
 }process;
