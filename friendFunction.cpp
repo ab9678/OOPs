@@ -1,11 +1,9 @@
 # include <iostream>
 using namespace std;
 class secondNum;    // this is a forward declaration of classes
-
 /* 
     friend function should have the classes available at the first instance of its declaration otherwise the second class will become unavailable
 */
-
 class firstNum{
   
     int num1;
@@ -15,6 +13,7 @@ class firstNum{
         num1=x;
     }
     friend int mean(firstNum, secondNum);
+
 
 };
 
