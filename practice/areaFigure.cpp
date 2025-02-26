@@ -1,7 +1,12 @@
 # include <iostream>
 using namespace std;
 
-int main(){
-    
-    return 0;
-}
+class A{
+    public:
+    int x;
+    int abc(){
+        cout<<"hello";
+    }
+};
+
+

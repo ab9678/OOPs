@@ -78,5 +78,4 @@ int main(){
     result res;
     res.display(s);
 
-
 }
