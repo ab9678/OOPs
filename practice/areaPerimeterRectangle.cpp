@@ -1,4 +1,4 @@
-// area and peremeter of circle using class
+// area and perimeter of rectangle using class
 
 #include<iostream>
 using namespace std;
