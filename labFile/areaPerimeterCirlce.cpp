@@ -3,7 +3,8 @@ using namespace std;
 
 class circle{
 
-    int radius,area;
+    int radius;
+    float area;
 
     void Area(){
         area = 3.14*radius*radius;
