@@ -2,34 +2,24 @@
 using namespace std;
 
 class student{
-
-    int x;
     public:
-    student(){}
+    int x;
+    int y;
 
-    student(student &o){
-        this->x = o.x;
+
+    student(){
+        cin >> x;
+    };
+    student(int a,student &o){
+        x = o.x;
+        y=a;
     }
-
-    student(int v){
-
-    }
-
-
-
 
 };
 
-
-
 int main(){
 
-    student s1(84);
-    student x(78);
-    student y;
-
-    y=student(78);
-
-    
-
+    student s1;
+    student s2(23,s1);
+    cout<<"x="<<s2.x<<endl<<"y="<<s2.y<<endl;
 }
