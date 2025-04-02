@@ -30,7 +30,6 @@ class matrix{
                 break;
             }
         }
-
         cout<<sum<<endl;
     }
 };
