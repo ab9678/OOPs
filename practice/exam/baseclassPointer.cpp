@@ -3,13 +3,15 @@ using namespace std;
 
 class base{
     public:
-    virtual void hello(){
+    void hello(){
         cout << "Hello parent";
     }
+   
 };
 
 class derived: public base{
     public:
+    int x, y;
     void hello(){
         cout<<"Hello derived";
     }
@@ -18,10 +20,15 @@ class derived: public base{
 int main(){
     base *ptr;
 
-    ptr = new derived;
+    base ob;
+    derived od;
+
+    ptr = &od;
 
     ptr->hello();
 
+    derived obj;
 
+    base a = obj;
 
 }
