@@ -29,6 +29,9 @@ class reservation:public train{
 
     int book;
 
+    
+
+
 };
 
 
