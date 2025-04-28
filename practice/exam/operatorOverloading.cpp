@@ -19,7 +19,16 @@ class number{
 
         return temp;
     }
-    
+
+
+        number operator - (number obj){
+        number temp;
+        temp.real = real-obj.real;
+        temp.i = i-obj.i;
+
+        return temp;
+    }
+
     
 
 
@@ -34,7 +43,8 @@ int main(){
     number n2(23,3);
 
     number n3 = n2+n1;
+    number n4 = n2-n1;
     n3.show();
+    n4.show();
 
- 
 }

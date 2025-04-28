@@ -16,7 +16,6 @@ class number{
     }
 };
 
-
 int main(){
     number <int>n(23);
     n.display();
