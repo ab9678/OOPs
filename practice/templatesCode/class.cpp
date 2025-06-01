@@ -14,6 +14,10 @@ class number{
     void display(){
         cout << num;
     }
+
+    void count(){
+        
+    }
 };
 
 

@@ -7,7 +7,6 @@ class A{
     public:
     int num1;
 
-    virtual void hello()=0;
     virtual void display(){
         cout<<"Empty";
     }
@@ -33,6 +32,6 @@ int main(){
     A *ptr;
 
     ptr = new B;
-    ptr->hello();
+    // ptr->hello();
     ptr->display();
 }

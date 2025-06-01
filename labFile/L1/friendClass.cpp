@@ -10,6 +10,7 @@ class original{
 };
 class friendClass{
     public:
+    
     friendClass(original obj){
         cout << "\nName: ";
         cin >> obj.name;
