@@ -1,6 +1,7 @@
 # include <iostream>
 using namespace std;
 
+// one class contain the object of another class
 
 class student {
     public:
