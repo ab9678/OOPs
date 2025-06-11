@@ -19,4 +19,5 @@ int main(){
         s = rfile.get();
         cout<<s;
     }
+    
 }
