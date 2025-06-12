@@ -7,7 +7,7 @@ class Array{
 
     void insert(){
         int n;
-        cout << "Enter address: ";
+        cout << "Enter index: ";
         cin >> n;
 
         try{

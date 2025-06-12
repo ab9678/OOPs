@@ -10,8 +10,8 @@ class number{
     }
 
 
-    void operator -(){
-        real+=2;
+    void operator --(){
+        real--;
         imaginary--;
     }
 
@@ -24,6 +24,6 @@ class number{
 int main(){
     number c2(2,3);
 
-    -c2;
+    --c2;
     c2.display();
 }
