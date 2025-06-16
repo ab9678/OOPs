@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 typedef struct Process {
-    int id;  
+  
     int at;  
     int bt;  
     int ct;  
@@ -19,6 +19,7 @@ void calctime(process pr[], int n) {
     for (int i = 0; i < n; i++) {
         if(crt<pr[i].at){
           crt=pr[i].at;
+          printf("ideal for %ds",pr[i].at-crt);
         }
         crt = crt + pr[i].bt;  
         pr[i].ct = crt;       
@@ -30,8 +31,8 @@ void calctime(process pr[], int n) {
     }
 
   
-    printf("\nAverage Turnaround Time: %.2f\n", (float)totalTAT / n);
-    printf("Average Waiting Time: %.2f\n", (float)totalWT / n);
+    printf("\nAverage Turnaround Time: %f\n", (float)totalTAT / n);
+    printf("Average Waiting Time: %f\n", (float)totalWT / n);
 }
 
 
@@ -41,8 +42,8 @@ void printProcessDetails(process pr[], int n) {
     printf("----------------------------------------------------------\n");
     
     for (int i = 0; i < n; i++) {
-        printf("%d\t %d\t %d\t  %d\t %d\t  %d\t \n", 
-                pr[i].id, pr[i].at, pr[i].bt, pr[i].ct, pr[i].tat, pr[i].wt);
+        printf("%d\t %d\t  %d\t %d\t  %d\t \n", 
+                pr[i].at, pr[i].bt, pr[i].ct, pr[i].tat, pr[i].wt);
     }
 
     printf("----------------------------------------------------------\n");
@@ -57,7 +58,7 @@ int main() {
 
    
     for (int i = 0; i < n; i++) {
-        pr[i].id = i + 1; 
+
         
         printf("Enter arrival time for process P%d: ", i + 1);
         scanf("%d", &pr[i].at); 
@@ -73,3 +74,4 @@ int main() {
 
     return 0;
 }
+//new
