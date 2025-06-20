@@ -7,6 +7,7 @@ int main(){
 
     fprintf(fp, "hello");
     fclose(fp);
+file:///home/abhigyan/Downloads/Telegram%20Desktop/web_activity.log
 
     fp = fopen("kela.txt","a");
 
